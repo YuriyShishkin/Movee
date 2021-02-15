@@ -10,12 +10,11 @@
     justify-content: space-between;
   }
 }
-.container {
-}
 .logo {
   &__link {
     @include fontText($montserrat, 30px, 500);
     text-transform: uppercase;
+    color: #333;
   }
 }
 .nav {
