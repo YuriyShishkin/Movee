@@ -1,0 +1,106 @@
+.slider {
+  text-align: center;
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 60px;
+  }
+  &__menu {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__menu-item {
+    width: 200px;
+    padding: 13px 0;
+    border: 1px solid #ebebeb;
+    &:hover {
+      border: 1px solid #fed100;
+    }
+  }
+}
+.slides {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/slides/prev.svg");
+    width: 11px;
+    height: 20px;
+    top: 175px;
+    left: 100px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/slides/next.svg");
+    width: 11px;
+    height: 20px;
+    top: 175px;
+    right: 100px;
+  }
+  &__slide {
+    text-align: left;
+    margin-top: 50px;
+  }
+  &__img {
+    width: 641px;
+    height: 453px;
+  }
+}
+.slide {
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 35px;
+  }
+  &__list {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 55px;
+  }
+  &__list li {
+    margin-bottom: 25px;
+    margin-left: 25px;
+    padding-left: 10px;
+    list-style-image: url("../img/slides/checkicon.svg");
+  }
+  &__list-btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    padding: 14px 78px;
+    background-color: #fed100;
+  }
+}

@@ -440,6 +440,7 @@ body {
 
 .price {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .price__title {
@@ -519,6 +520,134 @@ body {
 }
 
 .price__item-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  padding: 14px 78px;
+  background-color: #fed100;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slider__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 15px;
+}
+
+.slider__subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 60px;
+}
+
+.slider__menu {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.slider__menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.slider__menu-item {
+  width: 200px;
+  padding: 13px 0;
+  border: 1px solid #ebebeb;
+}
+
+.slider__menu-item:hover {
+  border: 1px solid #fed100;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.slides::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/slides/prev.svg");
+  width: 11px;
+  height: 20px;
+  top: 175px;
+  left: 100px;
+}
+
+.slides::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/slides/next.svg");
+  width: 11px;
+  height: 20px;
+  top: 175px;
+  right: 100px;
+}
+
+.slides__slide {
+  text-align: left;
+  margin-top: 50px;
+}
+
+.slides__img {
+  width: 641px;
+  height: 453px;
+}
+
+.slide__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 35px;
+}
+
+.slide__list {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 55px;
+}
+
+.slide__list li {
+  margin-bottom: 25px;
+  margin-left: 25px;
+  padding-left: 10px;
+  list-style-image: url("../img/slides/checkicon.svg");
+}
+
+.slide__list-btn {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
